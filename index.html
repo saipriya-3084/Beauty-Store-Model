@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    
+   <nav class="navbar navbar-expand-lg" style="background-color: rgb(255, 0, 119);">
+  <div class="container-fluid">
+    <img class="logo" src="pinkheart.png" alt="logo"/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Shop</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categories
+          </a>
+          <ul class="dropdown-menu" style="background-color: rgb(255, 0, 119);">
+            <li><a class="dropdown-header text-white" href="#">Makeup</a></li>
+             <li><a class="dropdown-item text-white" href="#">Lipstick</a></li>
+             <li><a class="dropdown-item text-white" href="#">Lip Gloss</a></li>
+             <li><a class="dropdown-item text-white" href="#">Foundation</a></li>
+             <li><a class="dropdown-item text-white" href="#">Concealer</a></li>
+            <li><hr class="dropdown-divider "></li>
+            <li><a class="dropdown-item text-white" href="#">Skincare</a></li>
+            <li><a class="dropdown-item text-white" href="#">Face Serum</a></li>
+            <li><a class="dropdown-item text-white" href="#">Moisturizer</a></li>
+            <li><a class="dropdown-item text-white" href="#">Sunscreen</a></li>
+            <li><hr class="dropdown-divider"></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light text-white" type="submit">Search</button>
+      </form>
+      <div class="ms-3 text-white position-relative" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#cartModal">
+  🛒 Cart
+  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+</div>
+    </div>
+  </div>
+</nav>
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner1.jpg" class="banner" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner2.jpg" class="banner" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner3.jpg"class="banner" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-3 text-center">
+    <h2 class="section-heading">Newest Arrivals</h2>
+</div>
+<div class="container mt-4">
+<div class="row g-4">
+<div class="col-md-4">
+<div class="card" style="width: 18rem; border: 2px solid pink;">
+  <img src="card1.jpeg" class="card-img-top" alt="Lipstick">
+  <div class="card-body" style="background-color: #ffe6f0;">
+    <h5 class="card-title">Matte Lipstick</h5>
+    <p class="card-text">Long-lasting matte finish. Available in 10 shades.</p>
+    <a href="#"  class="btn btn-pink add-to-cart" data-name="Matte Lipstick" data-price="499"data-img="card1.jpeg"style="background-color: pink; color: white;">Add to Cart</a>
+  </div>
+ </div>
+ </div>
+ <div class="col-md-4">
+    <div class="card" style="width: 18rem; border: 2px solid pink;">
+  <img src="card2.jpeg" class="card-img-top" alt="Lipstick">
+  <div class="card-body" style="background-color: #ffe6f0;">
+    <h5 class="card-title">Matte Lipstick</h5>
+    <p class="card-text">Long-lasting matte finish. Available in 10 shades.</p>
+    <a href="#" class="btn btn-pink add-to-cart" data-name="Glossy Lipstick" data-price="599" data-img="card2.jpeg" style="background-color: pink; color: white;">Add to Cart</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem;  border: 2px solid pink;">
+  <img src="card3.jpg" class="card-img-top" alt="Lipstick">
+  <div class="card-body" style="background-color: #ffe6f0;">
+    <h5 class="card-title">Matte Lipstick</h5>
+    <p class="card-text">Long-lasting matte finish. Available in 10 shades.</p>
+    <a href="#" class="btn btn-pink add-to-cart" data-name="Dewy Foundation" data-price="799" data-img="card3.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+  </div>
+  </div>
+  </div>
+ </div>
+ </div>
+ <div class="container mt-5">
+  <!-- Featured Categories -->
+  <h2 class="section-heading"class="newest-heading mb-4">Featured Categories</h2>
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="category-card">
+        <div class="category-icon">💄</div>
+        <h5>Lips</h5>
+        <a href="#" class="btn btn-sm">Shop Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="category-card">
+        <div class="category-icon">👁️</div>
+        <h5>Eyes</h5>
+        <a href="#" class="btn btn-sm">Shop Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="category-card">
+        <div class="category-icon">🧴</div>
+        <h5>Face</h5>
+        <a href="#" class="btn btn-sm">Shop Now</a>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="category-card">
+        <div class="category-icon">✨</div>
+        <h5>Skin Care</h5>
+        <a href="#" class="btn btn-sm">Shop Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Best Sellers -->
+  <h2 class="section-heading" class="newest-heading mt-5 mb-4">Best Sellers</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card border-pink" style="border: 2px solid pink;">
+        <img src="bestseller2.jpg" class="card-img-top" alt="Lipstick">
+        <div class="card-body" style="background-color: #ffe6f0;">
+          <h5 class="card-title">Matte Lipstick</h5>
+          <p class="card-text">Long-lasting matte finish. Available in 10 shades.</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-pink" style="border: 2px solid pink;">
+        <img src="bestseller1.jpg" class="card-img-top" alt="Gloss">
+        <div class="card-body" style="background-color: #ffe6f0;">
+          <h5 class="card-title">Glossy Lipstick</h5>
+          <p class="card-text">High-shine gloss for a bold finish. Non-sticky feel.</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-pink" style="border: 2px solid pink;">
+        <img src="bestseller3.jpg" class="card-img-top" alt="Foundation">
+        <div class="card-body" style="background-color: #ffe6f0;">
+          <h5 class="card-title">Dewy Foundation</h5>
+          <p class="card-text">Hydrating formula with natural coverage. SPF 20.</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="blush.jpg" class="card-img-top" alt="Blush">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Liquid Blush</h5>
+      <p class="card-text">Gives a natural rosy glow with long-lasting finish.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Liquid Blush" data-price="549" data-img="blush.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="highlighter.jpg" class="card-img-top" alt="Highlighter">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Glow Highlighter</h5>
+      <p class="card-text">Shimmer finish to brighten your makeup look.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Glow Highlighter" data-price="699" data-img="highlighter.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="highlighter.jpg" class="card-img-top" alt="Highlighter">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Glow Highlighter</h5>
+      <p class="card-text">Shimmer finish to brighten your makeup look.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Glow Highlighter" data-price="699" data-img="highlighter.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="brushset.jpg" class="card-img-top" alt="Brush Set">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Makeup Brush Set</h5>
+      <p class="card-text">Soft bristles for smooth and even makeup application.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Makeup Brush Set" data-price="899" data-img="brushset.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="lipliner.jpg" class="card-img-top" alt="Lip Liner">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Waterproof Lip Liner</h5>
+      <p class="card-text">Defines lips with long-lasting waterproof formula.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Waterproof Lip Liner" data-price="299" data-img="lipliner.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="aloegel.jpg" class="card-img-top" alt="Aloe Gel">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Aloe Vera Gel</h5>
+      <p class="card-text">Soothes and hydrates skin with natural aloe extract.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Aloe Vera Gel" data-price="399" data-img="aloegel.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width: 18rem; border: 2px solid pink;">
+    <img src="vitcserum.jpg" class="card-img-top" alt="Serum">
+    <div class="card-body" style="background-color: #ffe6f0;">
+      <h5 class="card-title">Vitamin C Serum</h5>
+      <p class="card-text">Brightens skin and reduces dark spots.</p>
+      <a href="#" class="btn btn-pink add-to-cart" data-name="Vitamin C Serum" data-price="749" data-img="vitcserum.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="modal fade" id="cartModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-end">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: pink;">
+        <h5 class="modal-title">Your Cart 🛍️</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="cart-items">
+        <p class="text-center">Your cart is empty</p>
+      </div>
+      <div class="modal-footer">
+        <h5 class="me-auto">Total: ₹<span id="cart-total">0</span></h5>
+        <button class="btn btn-success">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ </body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
