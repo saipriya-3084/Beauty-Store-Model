@@ -1,8 +1,12 @@
 .logo{
     width:6Vw;
 }
-.nav-link dropdown-toggle{
-    background-color: rgb(255, 0, 119);
+.nav-link.dropdown-toggle{
+    background-color: rgb(219, 90, 140);
+}
+.dropdown-menu .dropdown-item:hover {
+  color: rgb(255, 0, 119) !important;   /* pink text */
+  background-color: #ffe6f0 !important; /* light pink bg (optional) */
 }
 .banner{
     height:70Vh;
