@@ -10,7 +10,7 @@
   </head>
   <body>
     
-   <nav class="navbar navbar-expand-lg" style="background-color: rgb(255, 0, 119);">
+   <nav class="navbar navbar-expand-lg" style="background-color: rgb(219, 90, 140)">
   <div class="container-fluid">
     <img class="logo" src="pinkheart.png" alt="logo"/>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,16 +35,13 @@
              <li><a class="dropdown-item text-white" href="#">Foundation</a></li>
              <li><a class="dropdown-item text-white" href="#">Concealer</a></li>
             <li><hr class="dropdown-divider "></li>
-            <li><a class="dropdown-item text-white" href="#">Skincare</a></li>
+            <li><a class="dropdown-header text-white" href="#">Skincare</a></li>
             <li><a class="dropdown-item text-white" href="#">Face Serum</a></li>
             <li><a class="dropdown-item text-white" href="#">Moisturizer</a></li>
             <li><a class="dropdown-item text-white" href="#">Sunscreen</a></li>
             <li><hr class="dropdown-divider"></li>
            
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -118,7 +115,9 @@
  </div>
  <div class="container mt-5">
   <!-- Featured Categories -->
-  <h2 class="section-heading"class="newest-heading mb-4">Featured Categories</h2>
+  <div class="container mt-3 text-center">
+    <h2 class="section-heading">Feature Categories</h2>
+</div>
   <div class="row g-4">
     <div class="col-md-3 col-sm-6">
       <div class="category-card">
@@ -151,35 +150,38 @@
   </div>
 
   <!-- Best Sellers -->
-  <h2 class="section-heading" class="newest-heading mt-5 mb-4">Best Sellers</h2>
-  <div class="row g-4">
+<div class="container mt-3 text-center">
+    <h2 class="section-heading">Best Sellers</h2>
+</div>  <div class="row g-4">
     <div class="col-md-4">
       <div class="card border-pink" style="border: 2px solid pink;">
         <img src="bestseller2.jpg" class="card-img-top" alt="Lipstick">
         <div class="card-body" style="background-color: #ffe6f0;">
           <h5 class="card-title">Matte Lipstick</h5>
           <p class="card-text">Long-lasting matte finish. Available in 10 shades.</p>
-          <a href="#" class="btn">Add to Cart</a>
+          <a href="#" class="btn btn-pink add-to-cart" data-name="Matte Lipstick" data-price="599" data-img="bestseller2.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card border-pink" style="border: 2px solid pink;">
-        <img src="bestseller1.jpg" class="card-img-top" alt="Gloss">
+        <img src="bestseller1.jpg" class="card-img-top" alt="Eye shadow quad">
         <div class="card-body" style="background-color: #ffe6f0;">
-          <h5 class="card-title">Glossy Lipstick</h5>
+          <h5 class="card-title">Eye shadow quad</h5>
           <p class="card-text">High-shine gloss for a bold finish. Non-sticky feel.</p>
-          <a href="#" class="btn">Add to Cart</a>
+            <a href="#" class="btn btn-pink add-to-cart" data-name="Eye shadow quad" data-price="549" data-img="bestseller1.jpg" style="background-color: pink; color: white;">Add to Cart</a>
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card border-pink" style="border: 2px solid pink;">
-        <img src="bestseller3.jpg" class="card-img-top" alt="Foundation">
+        <img src="bestseller3.jpg" class="card-img-top" alt="Top coat">
         <div class="card-body" style="background-color: #ffe6f0;">
-          <h5 class="card-title">Dewy Foundation</h5>
-          <p class="card-text">Hydrating formula with natural coverage. SPF 20.</p>
-          <a href="#" class="btn">Add to Cart</a>
+          <h5 class="card-title">Nail paint</h5>
+          <p class="card-text">Glossy Top coat Nail paint.</p>
+            <a href="#" class="btn btn-pink add-to-cart" data-name="Nail paint" data-price="549" data-img="bestseller3.jpg" style="background-color: pink; color: white;">Add to Cart</a>
+
         </div>
       </div>
     </div>
@@ -205,17 +207,7 @@
 </div>
 <div class="col-md-4">
   <div class="card" style="width: 18rem; border: 2px solid pink;">
-    <img src="highlighter.jpg" class="card-img-top" alt="Highlighter">
-    <div class="card-body" style="background-color: #ffe6f0;">
-      <h5 class="card-title">Glow Highlighter</h5>
-      <p class="card-text">Shimmer finish to brighten your makeup look.</p>
-      <a href="#" class="btn btn-pink add-to-cart" data-name="Glow Highlighter" data-price="699" data-img="highlighter.jpg" style="background-color: pink; color: white;">Add to Cart</a>
-    </div>
-  </div>
-</div>
-<div class="col-md-4">
-  <div class="card" style="width: 18rem; border: 2px solid pink;">
-    <img src="brushset.jpg" class="card-img-top" alt="Brush Set">
+    <img src="makeup brush set.jpg" class="card-img-top" alt="Brush Set">
     <div class="card-body" style="background-color: #ffe6f0;">
       <h5 class="card-title">Makeup Brush Set</h5>
       <p class="card-text">Soft bristles for smooth and even makeup application.</p>
@@ -225,9 +217,9 @@
 </div>
 <div class="col-md-4">
   <div class="card" style="width: 18rem; border: 2px solid pink;">
-    <img src="lipliner.jpg" class="card-img-top" alt="Lip Liner">
+    <img src="eyeliner.jpg" class="card-img-top" alt="Eye Liner">
     <div class="card-body" style="background-color: #ffe6f0;">
-      <h5 class="card-title">Waterproof Lip Liner</h5>
+      <h5 class="card-title">Waterproof Eye Liner</h5>
       <p class="card-text">Defines lips with long-lasting waterproof formula.</p>
       <a href="#" class="btn btn-pink add-to-cart" data-name="Waterproof Lip Liner" data-price="299" data-img="lipliner.jpg" style="background-color: pink; color: white;">Add to Cart</a>
     </div>
@@ -235,7 +227,7 @@
 </div>
 <div class="col-md-4">
   <div class="card" style="width: 18rem; border: 2px solid pink;">
-    <img src="aloegel.jpg" class="card-img-top" alt="Aloe Gel">
+    <img src="aloevera gel.jpg" class="card-img-top" alt="Aloe Gel">
     <div class="card-body" style="background-color: #ffe6f0;">
       <h5 class="card-title">Aloe Vera Gel</h5>
       <p class="card-text">Soothes and hydrates skin with natural aloe extract.</p>
@@ -245,7 +237,7 @@
 </div>
 <div class="col-md-4">
   <div class="card" style="width: 18rem; border: 2px solid pink;">
-    <img src="vitcserum.jpg" class="card-img-top" alt="Serum">
+    <img src="vitamin c serum.png" class="card-img-top" alt="Serum">
     <div class="card-body" style="background-color: #ffe6f0;">
       <h5 class="card-title">Vitamin C Serum</h5>
       <p class="card-text">Brightens skin and reduces dark spots.</p>
